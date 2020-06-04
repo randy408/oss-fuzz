@@ -23,6 +23,10 @@ RUN apt-get update && \
 
 RUN git clone --depth 1 https://github.com/randy408/libspng.git
 RUN git clone --depth 1 https://github.com/google/fuzzer-test-suite
+RUN wget http://www.zlib.net/zlib-1.2.11.tar.gz
+RUN git clone https://github.com/richgel999/miniz
+
+RUN wget 
 
 WORKDIR libspng
 COPY build.sh $SRC/
